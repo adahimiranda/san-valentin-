@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Valentine Letter 💌</title>
+  <title>San Valentín 💌</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,17 +11,19 @@
   <div class="pocket"></div>
 
   <div class="letter">
-  <p>
-    Mi querida Judi 🦢  <br><br>
-    Deseo que hoy recuerdes<br>
-    el amor profundo que siento por ti,<br>
-    tan grande y eterno<br>
-    como las infinitas<br>
-    identidades del cielo <br><br>
-    Con todo mi corazón,<br>
-    Adahí 💌
-  </p>
+    <p>
+      Mi querida Judi 🦢<br><br>
+      Deseo que hoy recuerdes<br>
+      el amor profundo que siento por ti,<br>
+      tan grande y eterno<br>
+      como las infinitas<br>
+      identidades del cielo ✨<br><br>
+      Con todo mi corazón,<br>
+      Adahí 🦢
+    </p>
+  </div>
 </div>
+
 <div class="buttons">
   <button id="open">OPEN</button>
   <button id="close">CLOSE</button>
@@ -30,64 +32,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-body {
-  background: #f6e6ef;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: 'Dancing Script', cursive;
-}
-
-.envelope {
-  position: relative;
-  width: 280px;
-  height: 180px;
-}
-
-.pocket {
-  border-left: 140px solid #f5a3a2;
-  border-right: 140px solid #f5a3a2;
-  border-top: 90px solid transparent;
-  position: absolute;
-  bottom: 0;
-}
-
-.letter {
-  position: absolute;
-  background: white;
-  width: 90%;
-  height: 90%;
-  left: 5%;
-  bottom: 0;
-  border-radius: 6px;
-  padding: 10px;
-  transition: transform 0.5s;
-  transform: translateY(60%);
-}
-
-.envelope.open .letter {
-  transform: translateY(-20%);
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-button {
-  padding: 8px 20px;
-  margin: 0 10px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-const envelope = document.querySelector(".envelope");
-
-document.getElementById("open").onclick = () => {
-  envelope.classList.add("open");
-};
-
-document.getElementById("close").onclick = () => {
-  envelope.classList.remove("open");
-};
